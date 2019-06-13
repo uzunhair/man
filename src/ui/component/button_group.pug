@@ -1,0 +1,21 @@
+section.py-3(id= layout.button_group.id)
+	+section_title(layout.button_group.title)
+	.py-4
+		.btn-group.btn-group-toggle(data-toggle='buttons')
+			label.btn.btn-light.active
+				input#option1(type='radio', name='options', autocomplete='off', checked='')
+				|  Active
+			label.btn.btn-light
+				input#option2(type='radio', name='options', autocomplete='off')
+				|  Radio
+			label.btn.btn-light
+				input#option3(type='radio', name='options', autocomplete='off')
+				|  Radio
+
+
+		.mt-3
+
+		.btn-group-vertical(role='group', aria-label='Basic example')
+			button.btn.btn-light(type='button') Left
+			button.btn.btn-light(type='button') Middle
+			button.btn.btn-light(type='button') Right

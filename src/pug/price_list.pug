@@ -1,0 +1,69 @@
+extends layout/page
+
+include mixin/cardHorisontal
+
+block variables
+	- var title = 'Прайс лист'
+
+block head
+
+block header
+
+block content
+	.page-image.embed-responsive.embed-responsive-21by9(style="background-image: url(/img/Avtobusy-turist.jpg);")
+
+	section.top-position
+
+	.container
+
+		+breadcrumb('Прайс лист', [])
+
+		.component.editorial-content
+			h1.mb-4 Прайс лист
+
+			ul.list-unstyled
+				li
+					a.link(href="#")
+						i.icon.icon-file-pdf
+						|
+						|
+						| Прайс-лист на новые автомобили MAN
+				li
+					a.link(href="#")
+						i.icon.icon-file-pdf
+						|
+						|
+						| Прайс-лист на работы по ремонту автомобилей
+				li
+					a.link(href="#")
+						i.icon.icon-file-pdf
+						|
+						|
+						| Прайс-лист на дополнительное оборудование
+				li
+					a.link(href="#")
+						i.icon.icon-file-pdf
+						|
+						|
+						| Прайс-лист на работы по установке и настройке тахографов (РФ)
+				li
+					a.link(href="#")
+						i.icon.icon-file-pdf
+						|
+						|
+						| Прайс-лист на работы по установке и настройке тахографов (Евро)
+				li
+					a.link(href="#")
+						i.icon.icon-file-pdf
+						|
+						|
+						| Прайс-лист на услуги мойки автомобилей
+
+
+	section.bottom-position
+		.functional-divider.my-5
+
+		include module/news
+		include module/bottom_contact
+
+block footer

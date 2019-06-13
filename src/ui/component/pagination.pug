@@ -1,0 +1,40 @@
+section.py-3(id= layout.pagination.id)
+	+section_title(layout.pagination.title)
+	.py-4
+		nav(aria-label='Page navigation example')
+			ul.pagination
+				li.page-item
+					a.page-link(href='#')
+						i.icon.icon-link_arrow_outline_left
+				li.page-item
+					a.page-link(href='#', data-next-page='1') 1 - 10
+				li.page-item.active
+					a.page-link(href='#', data-next-page='20') 21 - 30
+				li.page-item
+					a.page-link(href='#', data-next-page='11') 11 - 20
+				li.page-item
+					a.page-link(href='#', data-next-page='21') 21 - 30
+				li.page-item
+					a.page-link(href='#', data-next-page='31') 31 - 40
+				li.page-item
+					a.page-link(href='#')
+						i.icon.icon-link_arrow_outline_right
+
+	h4 Sizes
+	hr
+	nav(aria-label='...')
+		ul.pagination.pagination-lg
+			li.page-item.disabled
+				a.page-link(href='#')
+					i.icon.icon-link_arrow_outline_left
+			li.page-item.disabled
+				a.page-link(href='#', tabindex='-1') 1
+			li.page-item
+				a.page-link(href='#') 2
+			li.page-item
+				a.page-link(href='#') 3
+			li.page-item
+				a.page-link(href='#')
+					i.icon.icon-link_arrow_outline_right
+
+

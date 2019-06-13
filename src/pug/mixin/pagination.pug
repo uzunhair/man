@@ -1,0 +1,19 @@
+mixin pagination()
+	nav(aria-label='Page navigation example')
+		ul.pagination.justify-content-center
+			li.page-item
+				a.page-link(href='#')
+					i.icon.icon-link_arrow_outline_left
+			li.page-item
+				a.page-link(href='#', data-next-page='1') 1 - 10
+			li.page-item.active
+				a.page-link(href='#', data-next-page='20') 21 - 30
+			li.page-item
+				a.page-link(href='#', data-next-page='11') 11 - 20
+			li.page-item
+				a.page-link(href='#', data-next-page='21') 21 - 30
+			li.page-item
+				a.page-link(href='#', data-next-page='31') 31 - 40
+			li.page-item
+				a.page-link(href='#')
+					i.icon.icon-link_arrow_outline_right

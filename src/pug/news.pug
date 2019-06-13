@@ -1,0 +1,36 @@
+extends layout/page
+
+include mixin/cardHorisontal
+
+block variables
+	- var title = 'Новости и Акции'
+
+block head
+
+block header
+
+block content
+	.page-image.embed-responsive.embed-responsive-21by9(style="background-image: url(/img/Avtobusy-turist.jpg);")
+
+	section.top-position
+
+	.container
+
+		+breadcrumb('Новости и Акции', [])
+
+		.component
+			h1.mb-4 Новости и Акции
+
+			each i in page_news
+				+cardHorisontal('Акция на оригинальные запасные части MAN "Прочность и долговечность"', 'Только с 01.07.2018 по 30.09.2018!', '3 Апр 2019', 'mb-4')
+
+
+			+pagination()
+
+	section.bottom-position
+		.functional-divider.my-5
+
+		include module/bottom_contact
+
+block footer
+

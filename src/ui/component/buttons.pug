@@ -1,0 +1,43 @@
+section.py-3(id= layout.buttons.id)
+	+section_title(layout.buttons.title)
+	.py-4
+		h4 Default
+		.mb-3.bg-light.p-3
+			each Color,ColorValue in buttons
+				+button('text-capitalize btn-' + ColorValue, ColorValue)
+		.mb-3.bg-primary.p-3
+			each Color,ColorValue in buttons
+				+button('text-capitalize btn-' + ColorValue, ColorValue)
+
+		h4 Outline buttons
+		.mb-3
+			each Color,ColorValue in buttons
+				+button('text-capitalize btn-outline-' + ColorValue, ColorValue)
+		.mb-3.bg-primary.p-3
+			each Color,ColorValue in buttons
+				+button('text-capitalize btn-outline-' + ColorValue, ColorValue)
+
+
+		h4.mt-3 Size
+		.mb-3
+			each size in form_sizes
+				+button('btn btn-primary btn-' + size, 'Primary')
+
+			pre.line-numbers.rounded-0.mt-3
+				code.language-html
+					each size in form_sizes
+						='<button type="button" class="btn btn-primary btn-' + size + '"> Primary </button>'
+						|
+						|
+
+		.card.mt-5
+			a.card-header.text-dark(data-toggle="collapse" href="#collapse" + layout.buttons.id aria-expanded="false" aria-controls="collapse" + layout.buttons.id)=layout.buttons.id
+				|  pre code
+			.collapse.show(id="collapse" + layout.buttons.id)
+				pre.line-numbers.rounded-0
+					code.language-html
+						each Color,ColorValue in buttons
+							='<button type="button" class="btn btn-' + ColorValue + '">' + ColorValue + '</button>'
+							|
+							|
+

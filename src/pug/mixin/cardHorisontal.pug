@@ -1,0 +1,28 @@
+include image
+
+mixin cardHorisontal(title, desc, date, cardStyle)
+	if cardStyle
+		-var cardCss = cardStyle
+	else
+		-var cardCss = 'mb-md-4'
+
+	.card(class=cardCss)
+		.row.no-gutters.overflow-hidden
+			.col-lg-5
+				a(href="#")
+					+image('/img/test_2.jpg', 'card-img')
+			.col-lg-7.d-flex.flex-column
+				.card-body.d-flex.flex-column.flex-grow-1
+					if date
+						.card-text
+							span.text-muted.mr-2=date
+							|
+							|
+							a.link(href="#") Спецпредложения
+					a.h3.card-title.font-weight-normal(href="#")=title
+					.card-text=desc
+					.mt-auto.pt-3
+
+						a.link(href='#')
+							i.icon.icon-link_arrow_outline_right
+							| Подробнее

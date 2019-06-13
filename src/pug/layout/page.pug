@@ -1,0 +1,58 @@
+doctype html
+
+include ../mixin/breadcrumb
+include ../mixin/pagination
+include ../mixin/svg
+
+block variables
+
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(name="description" content="")
+		meta(name="author" content="")
+		title #{title}
+
+		link(href="css/theme.css" rel="stylesheet")
+
+		//if lt IE 9
+			script(src='bower_components/html5shiv/dist/html5shiv.js')
+
+		script(src="js/jquery.min.js")
+		script(src="js/modernizr_js.js")
+		script(src="js/theme.js")
+		block head
+
+	body.d-flex.flex-column.h-100
+		.main-wrap.flex-shrink-0
+			include header
+
+			block content
+
+		include footer
+
+		#js_to-top_page-share-container.back-to-top-container.hidden-print
+			.btn-group-vertical.shadow
+				a.btn.btn-primary.share.js_toggle-target(href='#page-share-container', role="button", aria-haspopup='true', aria-expanded='false')
+					i.icon.icon-share
+				button.btn.btn-primary.top.js_to-top(type='button')
+					i.icon.icon-link_arrow_outline_up
+			#page-share-container.shadow(aria-hidden='true')
+				.h5.mb-2 Поделиться
+				button.sharer.button(data-sharer='facebook', data-url='http://www.truck.man.eu/global/de/index.html')
+					i.icon.icon-facebook
+					span.sr-only Опубликовать на Facebook
+				button.sharer.button(data-sharer='twitter', data-title='MAN TGM im Verteilerverkehr | MAN Lkw International', data-url='http://www.truck.man.eu/global/de/index.html')
+					i.icon.icon-twitter
+					span.sr-only Опубликовать на Twitter
+				button.sharer.button(data-sharer="vk" data-caption="MAN TGM im Verteilerverkehr | MAN Lkw International" data-title="MAN TGM im Verteilerverkehr | MAN Lkw International" data-url="http://www.truck.man.eu/global/de/index.html")
+					i.icon.icon-vk_logo
+						span.sr-only Опубликовать в VK
+
+
+
+
+
+
+

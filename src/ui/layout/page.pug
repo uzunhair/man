@@ -1,0 +1,28 @@
+doctype html
+
+block variables
+include ../config/config
+include ../mixin/buttons
+
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(name="description" content="")
+		meta(name="author" content="")
+		title #{title}
+
+		// CSS
+		link(rel="stylesheet" href="../css/theme.css")
+		link(rel="stylesheet" href="css/prism.css")
+		link(rel="stylesheet" href="css/style.css")
+
+	body(class=bodyClass, data-spy="scroll", data-target="#navbar-example", data-offset="10", style="position: relative;")
+		include header
+
+		block content
+
+		include footer
+
+
+

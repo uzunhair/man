@@ -1,0 +1,20 @@
+section.py-3(id= layout.color.id)
+	+section_title(layout.color.title)
+
+	.py-4
+		//-.row
+			each Color,ColorValue in theme_colors
+				div(class='col-3 p-3 mb-2 text-' + ColorValue)=ColorValue
+		.row.mb-4
+			each Color,ColorValue in text_colors
+				.col-3.mb-2
+					div(class='p-3 text-' + ColorValue + " " + Color)
+						| .text-
+						=ColorValue
+
+		.row
+			each Color,ColorValue in bg_colors
+				.col-3.mb-2
+					div(class='p-3  bg-' + ColorValue + " " + Color)
+						| .bg-
+						=ColorValue

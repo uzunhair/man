@@ -1,0 +1,11 @@
+include image
+
+mixin cardVertical(title, desc)
+	.card
+		a.module-news-carousel-figure-link.overflow-hidden(href="#")
+			+image('/img/test_2.jpg', 'card-img-top')
+		.card-body.d-flex.flex-column
+			a.h3.card-title.font-weight-normal(href="#")=title
+			p.card-text.h-100=desc
+			div
+				a.btn.btn-primary(href='#') Подробнее

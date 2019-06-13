@@ -1,0 +1,523 @@
+{
+    "fish": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut eos eum eveniet exercitationem incidunt, inventore, iusto laborum molestiae, mollitia necessitatibus nostrum perspiciatis quod tempora ullam veritatis voluptas. Accusantium aperiam, consectetur cupiditate deleniti ducimus earum facere itaque maxime natus neque nihil odit, officiis quaerat reiciendis repudiandae soluta ullam ut, voluptates. Ab adipisci deserunt exercitationem ipsa iure iusto maxime odio quaerat saepe similique sunt, tempora ullam, voluptate. Dolore molestias neque unde?",
+    "container": {
+        "smUp":    "576px",
+        "smDown":  "575px",
+        "mdUp":    "768px",
+        "mdDown":  "767px",
+        "lgUp":    "992px",
+        "lgDown":  "991px",
+        "xlUp":    "1200px",
+        "xlDown":  "1199px"
+    },
+    "nav": [
+        {
+            "dropdown": true,
+            "text": "Главная",
+            "link": "/",
+            "itemList": [
+                {
+                    "dropdown": false,
+                    "text": "О компании \"Авто Флот\"",
+                    "link": "/about.html"
+                },
+                {
+                    "dropdown": false,
+                    "text": "Сертификаты",
+                    "link": "/2"
+                },
+                {
+                    "dropdown": false,
+                    "text": "Вакансии",
+                    "link": "/2"
+                }
+            ]
+        },
+        {
+            "dropdown": false,
+            "text": "Новости и акции",
+            "link": "/news.html"
+        },
+        {
+            "dropdown": true,
+            "text": "Грузовые автомобили",
+            "link": "#",
+            "itemList": [
+                {
+                    "dropdown": true,
+                    "text": "Модельный ряд",
+                    "link": "#",
+                    "itemList": [
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGX",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGS",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGL",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGM",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Конфигуратор а/м",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "dropdown": true,
+                    "text": "Магистральные перевозки",
+                    "link": "#",
+                    "itemList": [
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGX",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGS",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Сравнение моделей",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Конфигуратор а/м",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "dropdown": true,
+                    "text": "Развозные перевозки",
+                    "link": "#",
+                    "itemList": [
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGS",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGL",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGM",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Лесовозная техника",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Коммунальная техника",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Сравнение моделей",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Конфигуратор а/м",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "dropdown": true,
+                    "text": "Строительная техника",
+                    "link": "#",
+                    "itemList": [
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGX",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGS",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGL",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TGM",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Сравнение моделей",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "dropdown": true,
+                    "text": "Техника в наличии",
+                    "link": "#",
+                    "itemList": [
+                        {
+                            "dropdown": false,
+                            "text": "Новая техника",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "MAN TopUsed",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Конфигуратор а/м",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "dropdown": true,
+                    "text": "Dropdown 1",
+                    "link": "#",
+                    "itemList": [
+                        {
+                            "dropdown": true,
+                            "text": "Dropdown 2.1",
+                            "link": "#",
+                            "itemList": [
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.1",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.2",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.3",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.4",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.5",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.6",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.7",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.8",
+                                    "link": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "dropdown": true,
+                            "text": "Dropdown 2.2",
+                            "link": "#",
+                            "itemList": [
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.1",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.2",
+                                    "link": "#"
+                                },
+                                {
+                                    "dropdown": false,
+                                    "text": "Dropdown 3.3",
+                                    "link": "#"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "dropdown": false,
+                    "text": "Видеоматериалы MAN",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "dropdown": true,
+            "text": "Автобусы",
+            "link": "#",
+            "itemList": [
+                {
+                    "dropdown": false,
+                    "text": "MAN LION’S INTERCITY",
+                    "link": "#"
+                },
+                {
+                    "dropdown": false,
+                    "text": "MAN LION’S COACH",
+                    "link": "#"
+                },
+                {
+                    "dropdown": false,
+                    "text": "NEOPLAN CITYLINER",
+                    "link": "#"
+                },
+                {
+                    "dropdown": false,
+                    "text": "NEOPLAN TOURLINER",
+                    "link": "#"
+                }
+            ]
+
+        },
+        {
+            "dropdown": false,
+            "text": "Прицепная техника",
+            "link": "/1"
+        },
+        {
+            "dropdown": true,
+            "text": "Услуги",
+            "link": "/service.html",
+            "itemList": [
+                {
+                    "dropdown": true,
+                    "text": "Запчасти и аксессуары",
+                    "link": "#",
+                    "itemList": [
+                        {
+                            "dropdown": false,
+                            "text": "Оригинальные детали MAN",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Оригинальное масло MAN",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Акции",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Ремонт топливной аппаратуры",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Запись на ТО/Ремонт",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "dropdown": true,
+                    "text": "Ремонт, диагностика и ТО",
+                    "link": "#",
+                    "itemList": [
+                        {
+                            "dropdown": false,
+                            "text": "Сервисные контракты",
+                            "link": "#"
+                        },
+                        {
+                            "dropdown": false,
+                            "text": "Дополнительный срок гарантии",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "dropdown": false,
+                    "text": "Помощь в дороге с MAN Mobile24",
+                    "link": "#"
+                },
+                {
+                    "dropdown": false,
+                    "text": "Дополнительное оборудование",
+                    "link": "#"
+                },
+                {
+                    "dropdown": false,
+                    "text": "Выездной ремонт",
+                    "link": "#"
+                },
+                {
+                    "dropdown": false,
+                    "text": "Финансовые услуги",
+                    "link": "#"
+                },
+                {
+                    "dropdown": false,
+                    "text": "Кузовной ремонт",
+                    "link": "#"
+                },
+                {
+                    "dropdown": false,
+                    "text": "Запись на ТО/Ремонт",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "dropdown": true,
+            "text": "Контакты",
+            "link": "/contact.html",
+            "itemList": [
+                {
+                    "dropdown": false,
+                    "text": "Форма обратной связи",
+                    "link": "#"
+                }
+            ]
+        }
+    ],
+    "footer_product": [
+        "Грузовые автомобили",
+        "Автобусы",
+        "Запчасти",
+        "Прицепная техника",
+        "Дополнительное оборудование",
+        "Конфигуратор грузового автомобиля"
+    ],
+    "footer_social": [
+        {
+            "title": "MAN Truck & Bus",
+            "link": "https://www.facebook.com/mantruckandbus'",
+            "icon": "icon-facebook"
+        },
+        {
+            "title": "MAN Truck & Bus",
+            "link": "https://www.youtube.com/user/mantrucksandbuses'",
+            "icon": "icon-youtube"
+        },
+        {
+            "title": "MAN Trucker&acute;s World",
+            "link": "https://www.facebook.com/MAN.Truckers.World'",
+            "icon": "icon-facebook"
+        },
+        {
+            "title": "MAN Truck & Bus",
+            "link": "https://www.instagram.com/mantruckandbus/'",
+            "icon": "icon-instagram"
+        },
+        {
+            "title": "MAN Truck & Bus",
+            "link": "https://twitter.com/man_group'",
+            "icon": "icon-twitter"
+        }
+    ],
+    "footer_company": [
+        {
+            "title": "MAN Россия",
+            "icon": "icon-link_arrow_outline_right"
+        },
+        {
+            "title": "MAN Truck & Bus",
+            "icon": "icon-link_arrow_outline_right"
+        },
+        {
+            "title": "Партнерская сеть",
+            "icon": "icon-link_arrow_outline_right"
+        },
+        {
+            "title": "Press & Media",
+            "icon": "icon-link_arrow_outline_right"
+        },
+        {
+            "title": "MAN Mobile24",
+            "icon": "icon-link_arrow_outline_right"
+        },
+        {
+            "title": "Сайты по всему миру",
+            "icon": "icon-open"
+        }
+    ],
+    "cards_service": [
+        {
+            "title": "Грузовая техника MAN в наличии и на заказ",
+            "text": "ООО \"Авто Флот\" предлагает грузовые автомобили высочайшего качества по выгодным ценам. Технику MAN всегда можно выбрать из наличия или под заказ."
+        },
+        {
+            "title": "Гарантийный ремонт MAN, Neoplan",
+            "text": "ООО \"Авто Флот\" позволяет обслуживать одновременно 16 единиц грузовой техники в соответствии с высокими стандартами MAN."
+        },
+        {
+            "title": "Оригинальные запасные части MAN",
+            "text": "В ООО \"Авто Флот\" Вы можете приобрести оригинальные запасные части MAN для грузовиков и автобусов, большая часть из которых постоянно в наличии на нашем складе."
+        },
+        {
+            "title": "Участок кузовного ремонта",
+            "text": "Четыре поста ремонта, где две бригады специалистов осуществляют ремонт кабин, рам или полуприцепов. Ремонт производится в самые минимальные сроки."
+        }
+    ],
+    "page_news": [
+        {
+            "date": "01.01.2019",
+            "title": "Профессионалы для профессионалов: MAN делится опытом с ЦОДД Москвы"
+        },
+        {
+            "date": "26.11.2018",
+            "title": "MAN в сотрудничестве с Grunwald расширяет линейку самосвалов"
+        },
+        {
+            "date": "03.10.2018",
+            "title": "Запуск нового продукта - Оригинальное масло MAN"
+        },
+        {
+            "date": "27.04.2016",
+            "title": "Переменные затраты уходят в прошлое"
+        },
+        {
+            "date": "10.04.2015",
+            "title": "Снижение стоимости технологической мойки"
+        }
+    ]
+}
+

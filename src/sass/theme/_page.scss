@@ -1,0 +1,58 @@
+.main-wrap {
+    font-size: 15px;
+    padding-bottom: 3rem;
+}
+.page-image {
+    max-height: 450px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+.component {
+    margin-bottom: 2rem;
+    @include media-breakpoint-down(lg) {
+        padding-top: 2rem;
+    }
+}
+
+.module {
+    &-header {
+        margin-bottom: 1rem;
+    }
+    &-title {
+        @include fluid-type($width-xs, $width-xl, 18px, 40px);
+        font-family: "Arial";
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+}
+
+.top-position {
+    .module {
+        margin-bottom: 2rem;
+    }
+}
+
+.component-bottom-position {
+    .module {
+        &-title {
+            @include fluid-type($width-xs, $width-xl, 18px, $h2-font-size);
+            font-weight: normal;
+            text-transform: inherit;
+        }
+    }
+}
+
+.aside-position {
+    .module {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.bottom-position {
+    .module:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}

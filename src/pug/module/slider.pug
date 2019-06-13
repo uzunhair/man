@@ -1,0 +1,26 @@
+.module
+	.container.slideshow
+		.js_slideshow
+			-var slide  = ['/img/picturefill/slider.png', '/img/picturefill/slider.png', '/img/picturefill/slider.png', '/img/picturefill/slider.png']
+			each i in slide
+				div
+					.slideshow-item
+						a(href="#")
+							picture
+								source(media="(min-width: 992px)" srcset="../img/picturefill/slider.png, ../img/picturefill/slider-2x.png 2x")
+								source(media="(min-width: 768px)" srcset="../img/picturefill/slider-small.png, ../img/picturefill/slider-small-2x.png 2x")
+								img(src="/img/picturefill/slider.png" srcset="/img/picturefill/slider-fb-2x.png 2x" alt="a slider carved out of wood")
+
+		.js_slideshow-nav
+			-var slide  = ['/img/picturefill/slider.png', '/img/picturefill/slider.png', '/img/picturefill/slider.png', '/img/picturefill/slider.png']
+			each i in slide
+				div
+					.slideshow-item
+						.slideshow-body.bg-primary
+							a.slideshow-title(href="#") Безусловно, курс на социально-ориентированный национальный проект однозначно определяет каждого участника как способного принимать собственные решения касаемо поставленных обществом задач.
+							.mt-3
+								a.btn.btn-outline-primary(href='#')
+									i.icon.icon-open
+									|
+									| Подробнее
+

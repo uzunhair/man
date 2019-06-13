@@ -1,0 +1,35 @@
+.module
+	.container
+		.bg-light.p-3.vcard(itemscope='', itemtype='http://schema.org/LocalBusiness')
+			.h2.card-title Контакты
+			.row
+				.col-lg-6
+					strong.fn.org(itemprop='name') ООО "Авто Флот"
+					ul.list-unstyled(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+						li
+							a.link.adr(href="https://yandex.ru/maps/50/perm/?ll=55.853449%2C58.036282&mode=search&oid=1109113284&ol=biz&sctx=ZAAAAAgBEAAaKAoSCebmG9E97UtAEScvMgG%2FBE1AEhIJAG2ZSpG4tT8RIq629DL%2Fpj8oCjAAONuo89Dw4ba1QECczQZIAVXNzMw%2BWABiEmRpcmVjdF9wYWdlX2lkPTI0MmoCcnVwAJ0BzczMPaABAKgBAA%3D%3D&sll=55.853449%2C58.036282&source=adrsnip&sspn=0.123253%2C0.036919&text=%D0%9E%D0%9E%D0%9E%20%C2%AB%D0%90%D0%B2%D1%82%D0%BE%20%D0%A4%D0%BB%D0%BE%D1%82%C2%BB&z=14")
+								span.locality(itemprop='addressLocality') г. Пермь,
+								|
+								|
+								span.street-address(itemprop='streetAddress') ул. Воронежская 41/1
+						li Юридический адрес: Россия, 614113, г. Пермь, ул. Сивашская, 7
+
+					ul.list-unstyled
+						li
+							strong Единый телефон:
+							|
+							|
+							a.link.tel(href="tel:+73422501105" itemprop='telephone') 8 (342) 2-501-105
+						li
+							strong Эл. почта:
+							|
+							|
+							a.link.email(href="mailto:office@man59.ru" itemprop='email') office@man59.ru
+
+				.col-lg-6
+					ul.list-unstyled.mb-0
+						li
+							strong Режим работы:
+							br
+							|
+							time.workhours(itemprop="openingHours" datetime="Mo,Su 8:00−21:00") Пн-вс с 8:00 до 21:00 (без выходных)

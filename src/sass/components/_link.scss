@@ -1,0 +1,33 @@
+.link {
+    position: relative;
+    transition: color .2s ease;
+    color: $primary;
+    .icon {
+        color: $red;
+        margin-right: .5rem;
+    }
+    &:hover {
+        color: $secondary;
+        text-decoration: none;
+    }
+
+    &-reverse {
+        position: relative;
+        color: $secondary;
+        transition: color .2s ease;
+        &:hover {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.editorial-content p a {
+    color: $secondary;
+    transition: color .2s ease;
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,10 @@
+mixin image(src, style, srcSm, srcLg, srcXl)
+	picture
+		if srcSm
+			source(srcset=srcSm, media='(max-width: ' +container.mdDown +')')
+		if srcLg
+			source(srcset=srcLg, media='(max-width: ' +container.lgUp +')')
+		if srcXl
+			source(srcset=srcXl, media='(max-width: ' +container.xlUp +')')
+		source(srcset=src)
+		img(srcset=src, class=style, alt='My default image')

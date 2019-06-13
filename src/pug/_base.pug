@@ -1,0 +1,30 @@
+extends layout/page
+
+include mixin/cardHorisontal
+
+block variables
+	- var title = 'Прайс лист'
+
+block head
+
+block header
+
+block content
+
+	section.top-position
+
+	.container
+
+		+breadcrumb('Прайс лист"', [])
+
+		.component
+			h1.mb-4 Прайс лист
+
+
+	section.bottom-position
+		.functional-divider.my-5
+
+		include module/news
+		include module/bottom_contact
+
+block footer

@@ -1,0 +1,44 @@
+html {
+    min-height: 100%;
+    position: relative;
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+}
+
+// MAN-light
+@font-face {
+    font-family: "MANEurope";
+    src: url("../fonts/maneurope-light.woff2?v=1.2.0") format("woff2"),
+    url("../fonts/maneurope-light.woff?v=1.2.0") format("woff"),
+    url("../fonts/maneurope-light.ttf?v=1.2.0") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MANEurope Condensed";
+    src: url("../fonts/MANEuropeCondensed-Regular.eot?v=1.2.0");
+    src: url("../fonts/MANEuropeCondensed-Regular.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+    url("../fonts/MANEuropeCondensed-Regular.woff?v=1.2.0") format("woff"),
+    url("../fonts/MANEuropeCondensed-Regular.ttf?v=1.2.0") format("truetype"),
+    url("../fonts/MANEuropeCondensed-Regular.svg?v=1.2.0") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "MANEurope Condensed";
+    src: url("../fonts/MANEuropeCondensed-Bold.eot?v=1.2.0");
+    src: url("../fonts/MANEuropeCondensed-Bold.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+    url("../fonts/MANEuropeCondensed-Bold.woff?v=1.2.0") format("woff"),
+    url("../fonts/MANEuropeCondensed-Bold.ttf?v=1.2.0") format("truetype"),
+    url("../fonts/MANEuropeCondensed-Bold.svg?v=1.2.0") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}

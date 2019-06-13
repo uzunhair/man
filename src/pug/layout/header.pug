@@ -1,0 +1,61 @@
+
+header#page-header.page-header
+
+	.container.page-header-container
+		.page-header-body
+			a.page-header-toggler.js_page-header-toggler.d-lg-none
+				.page-header-toggler-hamburger
+					span
+					span
+					span
+				.page-header-toggler-cross
+					span
+					span
+
+			.page-header-tagline ООО "Авто Флот"
+			nav.page-header-navbar
+				ul.page-header-nav.js_page-header-nav
+					each item in nav
+						case item.dropdown
+							when true
+								li.page-header-nav-item.js_page-header-nav-item.page-header-xs-toggle
+									a.page-header-nav-link(href=item.link, role="button", data-toggle="dropdown", data-display="static", aria-haspopup="true", aria-expanded="false")=item.text
+
+									.dropdown-menu.js_dropdown-menu.page-header-nav-dropdown.js_page-header-nav-dropdown
+										.page-header-nav-dropdown-name
+											i.icon.icon-link_arrow_outline_left.d-lg-none
+											|
+											|
+											=item.text
+										ul.page-header-nav-dropdown-nav.col-lg-3
+											each itemTwo in item.itemList
+												if(itemTwo.dropdown)
+													li.dropdown.page-header-xs-toggle
+														a.page-header-nav-dropdown-link.page-header-nav-dropdown-toggle.js_page-header-nav-dropdown-toggle(href=itemTwo.link, role="button", data-toggle="dropdown", data-display="static", aria-haspopup="true", aria-expanded="false")=itemTwo.text
+
+														ul.dropdown-menu.js_dropdown-menu.page-header-nav-dropdown-submenu.state_page-header-nav-dropdown-submenu
+															each itemThree in itemTwo.itemList
+																li.dropdown.page-header-xs-toggle
+																	if(itemThree.dropdown)
+																		a.page-header-nav-dropdown-link.js_page-header-nav-dropdown-toggle(href=itemThree.link, role="button", data-toggle="dropdown", data-display="static", aria-haspopup="true", aria-expanded="false")=itemThree.text
+																		ul.dropdown-menu.js_dropdown-menu.page-header-nav-dropdown-submenu.state_page-header-nav-dropdown-submenu
+																			each itemFoo in itemThree.itemList
+																				li
+																					a.page-header-nav-dropdown-link(href=itemFoo.link)=itemFoo.text
+																	else
+																		a.page-header-nav-dropdown-link(href=itemThree.link)=itemThree.text
+												else
+													li
+														a.page-header-nav-dropdown-link(href=itemTwo.link)=itemTwo.text
+							default
+								li.page-header-nav-item.js_page-header-nav-item
+									a.page-header-nav-link(href=item.link)=item.text
+
+
+		.page-header-brand
+			a.page-header-brand-link(href="/")
+				img.page-header-brand-icon(src="../img/header_logo.svg", alt="")
+
+
+	block header
+

@@ -1,0 +1,138 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+  margin-bottom: $breadcrumb-margin-bottom;
+  list-style: none;
+  background-color: $breadcrumb-bg;
+  @include border-radius($breadcrumb-border-radius);
+}
+
+.breadcrumb-item {
+  // The separator between breadcrumbs (by default, a forward-slash: "/")
+  + .breadcrumb-item {
+    padding-left: $breadcrumb-item-padding;
+  }
+
+  &::before {
+    display: inline-block; // Suppress underlining of the separator in modern browsers
+    padding-right: $breadcrumb-item-padding/4;
+    content: $breadcrumb-divider;
+    font-size: 14px;
+    font-family: 'man_icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    top: 2px;
+  }
+
+  // IE9-11 hack to properly handle hyperlink underlines for breadcrumbs built
+  // without `<ul>`s. The `::before` pseudo-element generates an element
+  // *within* the .breadcrumb-item and thereby inherits the `text-decoration`.
+  //
+  // To trick IE into suppressing the underline, we give the pseudo-element an
+  // underline and then immediately remove it.
+  + .breadcrumb-item:hover::before {
+    text-decoration: underline;
+  }
+  // stylelint-disable-next-line no-duplicate-selectors
+  + .breadcrumb-item:hover::before {
+    text-decoration: none;
+  }
+
+  &.active {
+    color: $breadcrumb-active-color;
+  }
+}
+
+// custom style
+
+.breadcrumb-item {
+  position: relative;
+  font-size: 12px;
+  &.state_active {
+    > a {
+      color: $link-hover-color;
+    }
+    &:after {
+      content: '';
+        position: absolute;
+        left: 12px;
+        min-width: 250px;
+        height: 30px;
+        top: 100%;
+    }
+    .breadcrumb-dropdown {
+      animation: flyIn .2s ease-in;
+      display: block;
+    }
+  }
+  .breadcrumb-dropdown {
+    background: #fff;
+    border: 1px solid #d6d8db;
+    color: #303c49;
+    display: none;
+    left: 12px;
+    min-width: 250px;
+    padding: 15px 15px;
+    position: absolute;
+    top: calc(100% + 10px);
+    z-index: 1;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .2);
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      left: 30px;
+      margin-left: -10px;
+    }
+    &:before {
+      bottom: auto;
+      top: -21px;
+      border-bottom: 11px solid #d6d8db;
+    }
+
+    &:after {
+      bottom: auto;
+      top: -19px;
+      border-bottom: 10px solid #fff;
+    }
+    &-link {
+      display: block;
+      padding-top: 5px;
+      margin-top: 5px;
+      border-top: 1px solid #d6d8db;
+      &.state_active {
+        color: $red;
+        @include hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+}
+
+@keyframes flyIn {
+    0% {
+        display:none;
+        opacity:0
+    }
+    1% {
+        display:block;
+        opacity:0
+    }
+    100% {
+        display:block;
+        opacity:1
+    }
+}

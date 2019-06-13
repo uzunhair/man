@@ -1,0 +1,76 @@
+section.py-3(id= layout.navs.id)
+	+section_title(layout.navs.title)
+	.py-4
+		ul.nav.nav-pills
+			li.nav-item
+				a.nav-link.active(href='#') Active
+			li.nav-item
+				a.nav-link(href='#') Link
+			li.nav-item
+				a.nav-link(href='#') Link
+			li.nav-item
+				a.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') Disabled
+
+	h4 Tabs
+	hr
+	ul#myTab.nav.nav-tabs(role='tablist')
+		li.nav-item
+			a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Home
+		li.nav-item
+			a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Profile
+		li.nav-item
+			a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Messages
+	#myTabContent.tab-content
+		#home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+			.pt-4
+				div(itemscope='', itemtype='http://schema.org/Organization')
+					.h3(itemprop='name') MAN SE
+					.mb-3(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+						| Corporate Communications
+						br
+						span(itemprop='streetAddress') Ungererstra&szlig;e 69
+						br
+						span(itemprop='postalCode') 80805
+						span(itemprop='addressLocality')
+							| M&uuml;nchen
+							br
+							|  Deutschland
+					| Tel:
+					|
+					span(itemprop='telephone') +49 89 36098-111
+					br
+					| Fax:
+					|
+					span(itemprop='faxNumber') +49 89 36098-382
+					br
+					| E-mail:
+					|
+					a.link(href='mailto:presse@man.eu', itemprop='email')
+						i.icon.icon-mail
+						| presse@man.eu
+					br
+					.mt-3(itemprop='links')
+						ul.list-unstyled
+							li
+								a.link(href='#')
+									i.icon.icon-open
+									| Karriere bei MAN
+
+		#profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') ...
+		#contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab') ...
+
+
+	h4.pt-4 Pills
+	hr
+	ul.nav.nav-pills
+		li.nav-item
+			a.nav-link.active(href='#') Active
+		li.nav-item
+			a.nav-link(href='#') Link
+		li.nav-item
+			a.nav-link(href='#') Link
+		li.nav-item
+			a.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') Disabled
+
+
+

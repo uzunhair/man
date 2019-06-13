@@ -1,0 +1,15 @@
+section.py-3(id= layout.popovers.id)
+	+section_title(layout.popovers.title)
+	.py-4
+		button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='top', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+			| Popover on top
+		button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='right', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+			| Popover on right
+		button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='bottom', data-content='Vivamus\
+		sagittis lacus vel augue laoreet rutrum faucibus.')
+			| Popover on bottom
+		button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='left', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+			| Popover on left
+
+	mt-4
+		button.btn.btn-primary(type='button', data-toggle='popover', title='Popover title', data-content="And here's some amazing content. It's very engaging. Right?") Click to toggle popover

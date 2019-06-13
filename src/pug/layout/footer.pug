@@ -1,0 +1,60 @@
+footer#page-footer.page-footer
+
+	block footer
+
+	.container
+		.pt-5.pb-lg-3.py-lg-5.page-footer-navbar
+			.row
+				.col-lg-4
+					.page-footer-navbar-header
+						a.page-footer-navbar-title.h3.mb-4.d-block(data-toggle="collapse" href="#collapseFooter-1" role="button" aria-expanded="false" aria-controls="collapseFooter-1") Продукты и услуги
+
+					.collapse#collapseFooter-1
+						ul.list-unstyled
+							each i in footer_product
+								li
+									a.link.d-block.py-1(href="#")
+										i.icon.icon-link_arrow_outline_right
+										=i
+				.col-lg-4
+					.page-footer-navbar-header
+						a.page-footer-navbar-title.h3.mb-4.d-block(data-toggle="collapse" href="#collapseFooter-2" role="button" aria-expanded="false" aria-controls="collapseFooter-2") Социальные медиа
+
+					.collapse#collapseFooter-2
+						ul.list-unstyled
+							each i in footer_social
+								li
+									a.link.d-block.py-1.page-footer-social-link.d-flex.align-items-center(target='_blank', href=i.link,)
+										i.icon(class=i.icon)
+										span=i.title
+
+				.col-lg-4
+					.page-footer-navbar-header
+						a.page-footer-navbar-title.h3.mb-4.d-block(data-toggle="collapse" href="#collapseFooter-3" role="button" aria-expanded="false" aria-controls="collapseFooter-3") Компания
+
+					.collapse#collapseFooter-3
+						ul.list-unstyled
+							each i in footer_company
+								li
+									a.link.d-block.py-1(href="#",)
+										i.icon(class=i.icon)
+										span=i.title
+
+
+
+
+	.container.page-footer-mandatory
+		.row
+			.col-12.d-flex.flex-column.flex-md-row.flex-wrap
+				.mb-1.mb-lg-0.pr-3.mr-lg-auto &copy; ООО "Авто Флот"
+
+				ul.page-footer-mandatory-nav
+					li.page-footer-mandatory-item
+						a.link-reverse.page-footer-mandatory-link(href='#') Согласие на обработку данных
+					li.page-footer-mandatory-item
+						a.link-reverse.page-footer-mandatory-link(href='#') Политика конфиденциальности
+					li.page-footer-mandatory-item
+						a.link-reverse.page-footer-mandatory-link(href='#') Карта сайта
+
+.d-none
+	include ../../img/svg/sprite.svg

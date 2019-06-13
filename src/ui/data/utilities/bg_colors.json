@@ -1,0 +1,10 @@
+{
+    "primary":  "text-white",
+    "warning":  "text-white",
+    "danger":  "text-white",
+    "success":  "text-white",
+    "info":  "text-white",
+    "light":  "text-primary",
+    "white":  "text-primary",
+    "transparent": "text-primary"
+}

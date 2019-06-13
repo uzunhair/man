@@ -1,0 +1,10 @@
+{
+  "primary":  "bg-transparent",
+  "muted":  "bg-transparent",
+  "warning":  "bg-transparent",
+  "danger":  "bg-transparent",
+  "success":  "bg-transparent",
+  "info":  "bg-transparent",
+  "light":  "bg-primary",
+  "white":  "bg-primary"
+}

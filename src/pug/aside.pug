@@ -1,0 +1,94 @@
+extends layout/page
+
+include mixin/cardHorisontal
+
+block variables
+	- var title = 'Сайдбар'
+
+block head
+
+block header
+
+block content
+
+	section.top-position
+
+	.container
+
+		+breadcrumb('Сайдбар"', [])
+		.component
+			h1.mb-4 Сайдбар
+			.row
+				.col-xl-8
+					each i in page_news
+						+cardHorisontal('Акция на оригинальные запасные части MAN "Прочность и долговечность"', 'Только с 01.07.2018 по 30.09.2018!', '3 Апр 2019', 'mb-4')
+
+				.aside-position.col-xl-4
+					.module
+						.card
+							.card-body
+								.h3.card-title Свяжитесь с нами!
+								a.btn.btn-primary(href="#") Онлайн заявка на ТО и ремонт
+
+
+					.module
+						.bg-light.card-body
+							ul#myTab.nav.nav-tabs(role='tablist')
+								li.nav-item
+									a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Home
+								li.nav-item
+									a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Profile
+								li.nav-item
+									a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Messages
+							#myTabContent.tab-content
+								#home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+									.bg-white.py-3.px-4.mt-3
+										div(itemscope='', itemtype='http://schema.org/Organization')
+											.h3(itemprop='name') MAN SE
+											.mb-3(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+												| Corporate Communications
+												br
+												span(itemprop='streetAddress') Ungererstra&szlig;e 69
+												br
+												span(itemprop='postalCode') 80805
+												span(itemprop='addressLocality')
+													| M&uuml;nchen
+													br
+													|  Deutschland
+											| Tel:
+											|
+											span(itemprop='telephone') +49 89 36098-111
+											br
+											| Fax:
+											|
+											span(itemprop='faxNumber') +49 89 36098-382
+											br
+											| E-mail:
+											|
+											a.link(href='mailto:presse@man.eu', itemprop='email')
+												i.icon.icon-mail
+												| presse@man.eu
+											br
+											.mt-3(itemprop='links')
+												ul.list-unstyled
+													li
+														a.link(href='#')
+															i.icon.icon-open
+															| Karriere bei MAN
+
+								#profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+									.bg-white.py-3.px-4.mt-3 Tab 2
+								#contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+									.bg-white.py-3.px-4.mt-3 Tab 3
+
+
+
+
+
+	section.bottom-position
+		.functional-divider.my-5
+
+		include module/news
+		include module/bottom_contact
+
+block footer

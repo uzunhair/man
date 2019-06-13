@@ -1,0 +1,40 @@
+extends layout/page
+
+include mixin/cardHorisontal
+
+block variables
+	- var title = 'Услуги'
+
+block head
+
+block header
+
+block content
+
+	.page-image.embed-responsive.embed-responsive-21by9(style="background-image: url(/img/Avtobusy-turist.jpg);")
+
+	section.top-position
+
+	.container
+
+		+breadcrumb('Услуги', [])
+
+		.component
+			h1.mb-4 Услуги
+
+			.row
+				each value in cards_service
+					.col-md-6.col-lg-3.mb-4
+						a.card.h-100.module-service-card(href="#")
+							.card-body
+								.h5.card-title=value.title
+								.card-text=value.text
+
+
+	section.bottom-position
+		.functional-divider.my-5
+
+		include module/news
+		include module/bottom_contact
+
+block footer

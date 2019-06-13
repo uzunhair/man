@@ -1,0 +1,50 @@
+section.py-3(id= layout.dropdowns.id)
+	+section_title(layout.dropdowns.title)
+	.py-4
+		.row.mb-4
+			.col
+				.dropdown
+					button#dropdownMenuButton.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						| Dropdown button
+					.dropdown-menu(aria-labelledby='dropdownMenuButton')
+						a.dropdown-item(href='#') Action
+						a.dropdown-item(href='#') Another action
+						.dropdown-divider
+						a.dropdown-item(href='#') Something else here
+			.col
+				.btn-group
+					button.btn.btn-secondary(type='button') Action
+					button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						span.sr-only Toggle Dropdown
+					.dropdown-menu
+						a.dropdown-item(href='#') Action
+						a.dropdown-item(href='#') Another action
+						a.dropdown-item(href='#') Something else here
+						a.dropdown-item(href='#') Something else here
+						.dropdown-divider
+						a.dropdown-item(href='#') Separated link
+
+		.row.ui-dropdown-menu
+			.col
+				.dropdown-menu
+					span.dropdown-item-text Dropdown item text
+					a.dropdown-item(href='#') Action
+					a.dropdown-item(href='#') Another action
+					a.dropdown-item(href='#') Something else here
+			.col
+				.dropdown-menu
+					a.dropdown-item(href='#') Regular link
+					a.dropdown-item.active(href='#') Active link
+					a.dropdown-item(href='#') Another link
+			.col
+				.dropdown-menu
+					a.dropdown-item(href='#') Regular link
+					a.dropdown-item.disabled(href='#', tabindex='-1', aria-disabled='true') Disabled link
+					a.dropdown-item(href='#') Another link
+			.col
+				.dropdown-menu
+					h6.dropdown-header Dropdown header
+					a.dropdown-item(href='#') Action
+					a.dropdown-item(href='#') Another action
+
+

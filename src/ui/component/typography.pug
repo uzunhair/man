@@ -1,0 +1,256 @@
+section.py-3(id= layout.typography.id)
+	+section_title(layout.typography.title)
+	.py-4
+		.d-flex.justify-content-between.align-items-center.mb-3
+			.div
+				h1.mb-0 h1.MAN Global Bold Condensed
+			.text-right Bold Condensed 40px #303C49
+
+		.d-flex.justify-content-between.align-items-center.mb-3
+			.div
+				h2.mb-0 h2.MAN Global Bold Condensed
+			.text-right Light 32px #303C49
+
+		.d-flex.justify-content-between.align-items-center.mb-3
+			.div
+				h3.mb-0 h3.MAN Global Bold Condensed
+			.text-right Light 22px #303C49
+
+		.d-flex.justify-content-between.align-items-center.mb-3
+			.div
+				h4.mb-0 h4.MAN Global Bold Condensed
+			.text-right Light 18px #303C49
+
+		.d-flex.justify-content-between.align-items-center.mb-3
+			.div
+				h5.mb-0 h5.Arial Bold
+			.text-right Arial Bold 15px #303C49
+
+	h4 Lead
+	hr
+	p.lead MAN Global Light 22px #838a92 - Lead / <br> Abstract Lorem ipsum dolor sit amet consetetur
+	.card.mt-3
+		pre.line-numbers.rounded-0
+			code.language-html
+				='<p class="lead">MAN Global Light 22px #838a92 - Lead</p>'
+
+	h4.mt-5 Blockquotes
+	hr
+
+	blockquote.blockquote
+		p.mb-0
+			| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+
+	blockquote.blockquote
+		p.mb-0
+			| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+		footer.blockquote-footer
+			| Someone famous in
+			cite(title='Source Title') Source Title
+
+	blockquote.blockquote.blockquote-reverse
+		p.mb-0
+			| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+		footer.blockquote-footer
+			| Someone famous in
+			cite(title='Source Title') Source Title
+
+
+	h4.mt-5 Lists
+	hr
+
+	.editorial-content
+		ul.list-unstyled
+			li Aspernatur blanditiis consectetur doloremque, ducimus fuga laudantium, molestias necessitatibus nesciunt, nulla pariatur placeat ratione sunt.
+
+			li Consectetur adipiscing elit
+			li Integer molestie lorem at massa
+			li Facilisis in pretium nisl aliquet
+			li
+				| Nulla volutpat aliquam velit
+				ul.list-unstyled
+					li Phasellus iaculis neque
+					li Purus sodales ultricies
+					li Vestibulum laoreet porttitor sem
+					li Ac tristique libero volutpat at
+			li Faucibus porta lacus fringilla vel
+			li Aenean sit amet erat nunc
+			li Eget porttitor lorem
+		ul
+			li Aspernatur blanditiis consectetur doloremque, ducimus fuga laudantium, molestias necessitatibus nesciunt, nulla pariatur placeat ratione sunt.
+
+			li Consectetur adipiscing elit
+			li Integer molestie lorem at massa
+			li Facilisis in pretium nisl aliquet
+			li
+				| Nulla volutpat aliquam velit
+				ul
+					li Phasellus iaculis neque
+					li Purus sodales ultricies
+					li Vestibulum laoreet porttitor sem
+					li Ac tristique libero volutpat at
+			li Faucibus porta lacus fringilla vel
+			li Aenean sit amet erat nunc
+			li Eget porttitor lorem
+
+	.card.my-3
+		pre.line-numbers.rounded-0
+			code.language-html
+				='<div class="editorial-content"><ul><li>...</li></ul></div>'
+				|
+				|
+				='<ul class="list-square"><li>...</li></ul>'
+
+	.editorial-content
+		ol.list-number
+			li
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate ea eos modi reprehenderit
+				| tempore?
+			li
+				| Aspernatur blanditiis consectetur doloremque, ducimus fuga laudantium, molestias necessitatibus nesciunt,
+				| nulla pariatur placeat ratione sunt.
+				ol
+					li
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate ea eos modi reprehenderit
+						| tempore?
+					li
+						| Aspernatur blanditiis consectetur doloremque, ducimus fuga laudantium, molestias necessitatibus nesciunt,
+						| nulla pariatur placeat ratione sunt.
+						ol
+							li
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate ea eos modi reprehenderit
+								| tempore?
+							li
+								| Aspernatur blanditiis consectetur doloremque, ducimus fuga laudantium, molestias necessitatibus nesciunt,
+								| nulla pariatur placeat ratione sunt.
+							li Consequuntur, deleniti doloribus eius eum iure minima quam sunt voluptate?
+							li
+								| Dicta dignissimos distinctio dolorum fugit iste nam, quae rerum voluptas voluptate voluptatibus? Deleniti
+								| inventore, rem!
+					li Consequuntur, deleniti doloribus eius eum iure minima quam sunt voluptate?
+					li
+						| Dicta dignissimos distinctio dolorum fugit iste nam, quae rerum voluptas voluptate voluptatibus? Deleniti
+						| inventore, rem!
+			li Consequuntur, deleniti doloribus eius eum iure minima quam sunt voluptate?
+			li
+				| Dicta dignissimos distinctio dolorum fugit iste nam, quae rerum voluptas voluptate voluptatibus? Deleniti
+				| inventore, rem!
+	.card.mt-3
+		pre.line-numbers.rounded-0
+			code.language-html
+				='<div class="editorial-content"><ol><li>...</li></ol></div>'
+				|
+				|
+				='<ol class="list-number"><li>...</ol></ul>'
+
+
+	h4.mt-5 Link list
+	hr
+
+	ul.list-unstyled
+		li
+			a.link(href='#')
+				i.icon.icon-link_arrow_outline_left.text-danger
+				| Lorem ipsum dolor sit amet.
+		li
+			a.link(href='#')
+				i.icon.icon-link_arrow_outline_left.text-danger
+				| Cumque ducimus perferendis quia ratione!
+		li
+			a.link(href='#')
+				i.icon.icon-link_arrow_outline_left.text-danger
+				| Aspernatur dolore eum nesciunt non!
+		li
+			a.link(href='#')
+				i.icon.icon-link_arrow_outline_left.text-danger
+				| Consequuntur earum eveniet iste quo.
+		li
+			a.link(href='#')
+				i.icon.icon-link_arrow_outline_left.text-danger
+				| Beatae ducimus fuga illo repudiandae!
+
+	.card.mt-3
+		pre.line-numbers.rounded-0
+			code.language-html
+				='<div class="editorial-content"><ul><li>...</li></ul></div>'
+				|
+				|
+				='<ul class="list-square"><li>...</li></ul>'
+				|
+				|
+				='<div class="editorial-content"><ol><li>...</li></ol></div>'
+				|
+				|
+				='<ol class="list-number"><li>...</ol></ul>'
+
+	h4.mt-5 Tables
+	hr
+
+	table.table
+		thead
+			tr
+				th(scope='col') #
+				th(scope='col') First
+				th(scope='col') Last
+				th(scope='col') Handle
+		tbody
+			tr
+				th(scope='row') 1
+				td Mark
+				td Otto
+				td @mdo
+			tr
+				th(scope='row') 2
+				td Jacob
+				td Thornton
+				td @fat
+			tr
+				th(scope='row') 3
+				td Larry
+				td the Bird
+				td @twitter
+
+	table.table.table-hover
+		thead
+			tr
+				th(scope='col') #
+				th(scope='col') First
+				th(scope='col') Last
+				th(scope='col').table-active Handle
+		tbody
+			tr
+				th(scope='row') 1
+				td Mark
+				td Otto
+				td.table-active @mdo
+			tr
+				th(scope='row') 2
+				td Jacob
+				td Thornton
+				td.table-active @fat
+			tr
+				th(scope='row') 3
+				td Larry
+				td the Bird
+				td.table-active @twitter
+
+
+	h4.mt-5 Image
+		hr
+
+	.row
+		-var i = 0
+		while i < 3
+			.col-lg-4
+				figure
+					.mb-3
+						a(href="#")
+							img.img-fluid(src='../img/test.jpg', alt=i++)
+					.h4 Authentisch und persönlich
+					.text-muted MAN ist selbstbewusst и zeigt stolz die Leistungsfähigkeit seiner Produkte in alre Bereichen und in souveränen Bildern.
+
+
+
+
+
+
