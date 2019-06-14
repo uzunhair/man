@@ -30,3 +30,11 @@
     }
   }
 }
+
+.img-error {
+  max-width: 100%;
+  height: auto;
+  @include media-breakpoint-down(lg) {
+    transform: rotate(-90deg);
+  }
+}
