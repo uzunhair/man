@@ -1,0 +1,23 @@
+extends layout/page
+
+include mixin/cardHorisontal
+
+block variables
+	- var title = 'Страница не найдена'
+
+block head
+
+block header
+
+block content
+
+	.container
+		.row
+			.col-lg-6.py-4.order-lg-2
+				h1 404
+				//h2 Страница не найдена
+				p Извините, но страница, которую вы ищете, возможно, была удалена или недоступна в данный момент времени.. Воспользуйтесь поиском или перейдите на главную страницу сайта.
+				a.btn.btn-outline-primary(href="/") Перейти на главную
+			.col-lg-6.order-lg-1.text-center
+				img.img-error(src="/img/error.jpg" alt="404")
+block footer
