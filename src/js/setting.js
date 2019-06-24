@@ -49,6 +49,8 @@ $(document).ready(function () {
         var $slideshow = $('.js_slideshow');
 
         $slideshow.slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
@@ -230,3 +232,16 @@ function cardHorisontalSlider() {
     });
 
 }
+
+/**
+ * Init simple ajax form
+ */
+jQuery(document).ready(function($) {
+    // Feedback
+    $('#feedbackForm').simpleSendForm({
+        successTitle: "Ваше сообщение отправлено!",
+        successText: "Мы свяжемся с Вами в самое ближайшее время",
+        captcha: false,
+        mailUrl: "/templates/template_zm_it/form-submit/submit.php"
+    });
+}); // end ready
