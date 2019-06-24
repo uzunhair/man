@@ -30,7 +30,7 @@ module.exports = {
                 'node_modules/jquery.dotdotdot/dist/jquery.dotdotdot.js',
                 'src/js/concat/*.js',
                 'src/js/setting.js'],
-            styleTheme: 'src/sass/theme.scss',
+            styleTheme: 'src/sass/core.scss',
             styleVendors: 'src/sass/system.scss',
             styleTypografy: 'src/sass/typografy.scss',
             img: 'src/img/**/*.+(jpg|jpeg|png)',
@@ -41,7 +41,7 @@ module.exports = {
             html: 'src/**/*.html',
             pug: 'src/pug/**/*.*',
             js: 'src/js/**/*.js',
-            styleTheme: ['src/sass/theme.scss','src/sass/theme/**/*.scss', 'src/sass/config/*.scss'],
+            styleTheme: ['src/sass/core.scss','src/sass/theme/**/*.scss', 'src/sass/config/*.scss'],
             styleVendors: ['src/sass/system.scss', 'src/sass/vendors/**/*.scss', 'src/sass/config/*.scss'],
             img: 'src/img/**/*.*',
             fonts: 'src/fonts/**/*.*'

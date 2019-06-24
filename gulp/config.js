@@ -27,7 +27,7 @@ module.exports = {
                 'node_modules/slick-carousel/slick/slick.min.js',
                 'src/js/concat/*.js',
                 'src/js/setting.js'],
-            styleTheme: 'src/sass/theme.scss',
+            styleTheme: 'src/sass/core.scss',
             img: ['src/img/**/*.+(png|jpg|jpeg|gif|svg)', '!src/img/svg*/**'],
             svgIcon: 'src/img/svg-icon/*.svg',
             fonts: 'src/fonts/**/*.*'
