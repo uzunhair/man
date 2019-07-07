@@ -16,6 +16,13 @@
                 right: 0;
                 border-bottom: 1px solid #d6d8db;
             }
+            .icon {
+                color: $man-red;
+                font-size: 16px;
+                &::before {
+                    transition: transform .2s ease;
+                }
+            }
             @include media-breakpoint-up(lg) {
                 &:before {
                     border-bottom: none;
@@ -25,6 +32,18 @@
             }
         }
         &-title {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            &[aria-expanded="true"] {
+                .icon {
+                    &::before {
+                        content: "\e607";
+                    }
+                }
+            }
+
            @include hover {
                color: inherit;
            }
