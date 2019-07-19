@@ -9,7 +9,7 @@ gulp.task('js:build', function (cb) {
 
     gulp.src(config.path.src.jsConcat)
         .pipe(plugin.plumber())
-        .pipe(plugin.concat('scripts.js'))
+        .pipe(plugin.concat('scripts.min.js'))
         .pipe(plugin.uglify())
         .pipe(gulp.dest(config.path.build.js));
     cb();
