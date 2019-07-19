@@ -34,6 +34,11 @@ header#page-header.page-header
 														a.page-header-nav-dropdown-link.page-header-nav-dropdown-toggle.js_page-header-nav-dropdown-toggle(href=itemTwo.link, role="button", data-toggle="dropdown", data-display="static", aria-haspopup="true", aria-expanded="false")=itemTwo.text
 
 														ul.dropdown-menu.js_dropdown-menu.page-header-nav-dropdown-submenu.state_page-header-nav-dropdown-submenu
+															li.page-header-nav-dropdown-name.js-nav-item__2.d-lg-none
+																i.icon.icon-link_arrow_outline_left.d-lg-none
+																|
+																|
+																=itemTwo.text
 															each itemThree in itemTwo.itemList
 																li.dropdown.page-header-xs-toggle
 																	if(itemThree.dropdown)
