@@ -8,14 +8,14 @@ gulp.task('js:build', function (cb) {
         .pipe(gulp.dest(config.path.build.js));
 
     gulp.src(config.path.src.jsConcat)
-        // .pipe(plugin.uglify())
         .pipe(plugin.plumber())
-        .pipe(plugin.concat('core.scss.js'))
+        .pipe(plugin.concat('scripts.js'))
+        .pipe(plugin.uglify())
         .pipe(gulp.dest(config.path.build.js));
     cb();
 });
 
-const modernizr = require('gulp-modernizr-build')
+const modernizr = require('gulp-modernizr-build');
 
 gulp.task('modernizr', function (cb) {
     gulp.src([
