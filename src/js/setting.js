@@ -155,6 +155,11 @@ function dropdownMenu() {
 
         return false;
     });
+    
+    $('.js-nav-item__2').on('click', function (e) {
+        e.stopPropagation();
+        $(this).parent('.dropdown-menu').removeClass("show");
+    });
 }
 
 function dropdownMenuHeight() {
